@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 color_codes = {
     
-    "blue": "#2980b9",
+    "blue2": "#30336b",
      
 }
 
@@ -18,7 +18,7 @@ SUPPORTED_COLORS = ",".join(color_codes.keys())
 # Get color from Environment variable
 COLOR_FROM_ENV = os.environ.get('APP_COLOR')
 # Generate a random color
-COLOR = random.choice(["blue"])
+COLOR = random.choice(["blue2"])
 
 
 @app.route("/")
